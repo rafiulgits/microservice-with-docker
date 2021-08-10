@@ -1,0 +1,14 @@
+version: "3"
+
+services:
+  node-server:
+    build: ./node-server
+    container_name: node-server-container
+    ports:
+      - 3000:3000
+
+  go-server:
+    build: ./go-server
+    container_name: go-server-container
+    ports:
+      - 8000:8000
